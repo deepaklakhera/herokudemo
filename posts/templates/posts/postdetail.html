@@ -1,0 +1,7 @@
+<h1>Post detail</h1>
+
+<p ><img src="{{object.image.url}}" alt="" height="250" ></p>
+<p>{{object.caption}}</p>
+
+<button ><a href="{% url 'postUpdate' object.id%}"> Edit</a></button>
+<button><a href="{%url 'postDelete' object.id %}"> Delete</button></a>

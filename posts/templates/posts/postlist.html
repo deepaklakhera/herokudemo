@@ -1,0 +1,13 @@
+<h1>All Posts </h1>
+<p><a href="{%url 'postCreate'%}"> Add Post</a></p>
+<ul>
+    {%for object in object_list%}
+
+    <p>
+        <a href="{{object.get_absolute_url}}">
+        <img src="{{object.image.url}}" alt="" height="200px" width="170px"></p>
+    
+        <p>{{object.caption}} </a></p>
+        <br>
+    {%endfor%}
+</ul>
